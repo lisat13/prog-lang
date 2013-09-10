@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--
+  LAB1
+  Navn: Lisa Tvedt
+  Jeg samarbeidet med: Ingen 
+  Tiden jeg har brukt på oppgaven: 
+-->
+
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Programmeringsspråk (versjon 0.0.1)</title>
+ 
+ <!-- Laste inn Javascript biblioteker her --> 
+
+ 
+ <!-- Inkludere CSS her -->
+ <link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
+ 
+ 
+</head>
+<body>
+	<h1> Programeringsspråk </h1>
+		<form>
+			<label for="proglangs">Velg:</label>
+			<select name="select-pl" id="proglangs" onChange="print(this)">
+				<option value="actionscript">ActionScript</option>
+				<option value="applescript">AppleScript</option>
+				<option value="asp">Asp</option>
+				<option value="basic">BASIC</option>
+				<option value="C">C</option>
+				<option value="cplusplus">C++</option>
+				<option value="clojure">Clojure</option>
+				<option value="COBOL">COBOL</option>
+				<option value="coldfosion">Coldfosion</option>
+				<option value="erlang">Erlang</option>
+				<option value="fortran">Fortran</option>
+				<option value="groovy">Groovy</option>
+				<option value="haskell">Haskell</option>
+				<option value="java">Java</option>
+				<option value="javascript">JacaScript</option>
+				<option value="lisp">Lisp</option>
+				<option value="perl">Perl</option>
+				<option value="php">PHP</option>
+				<option value="python">Python</option>
+				<option value="ruby">Ruby</option>
+				<option value="scala">Scala</option>
+				<option value="scheme">Scheme</option>
+			</select>
+		</form>	
+	<br>
+	<span id="output"> Velg programeringsspråk </span>
+		<script src="proglangs.js"> </script>
+
+</body>
+</html>
