@@ -1,0 +1,32 @@
+.nostyle {
+	list-style-type: none;
+}
+#one {
+text-align: center;
+color: blue;
+}
+#two {
+text-align: center;
+color: purple;
+}
+#three {
+text-align: center;
+color: red;
+}
+#four {
+text-align: center;
+color: orange;
+}
+#five {
+text-align: center;
+color: yellow;
+}
+h1 {
+text-align: center;
+color: pink;
+font-size: 50px;
+text-decoration: underline;
+}
+#nojs {
+float: center;
+}
