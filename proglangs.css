@@ -1,32 +1,32 @@
-.nostyle {
-	list-style-type: none;
-}
-#one {
-text-align: center;
-color: blue;
-}
-#two {
-text-align: center;
-color: purple;
-}
-#three {
-text-align: center;
-color: red;
-}
-#four {
-text-align: center;
-color: orange;
-}
-#five {
-text-align: center;
-color: yellow;
-}
+body {
+  padding-left: 11em; /*Flytter innholdet mot midten*/
+  font-family: Georgia, "Times New Roman", /*Endrer typen font*/
+        Times, serif;
+  color: #5C001F;   	/*farge på skrift*/
+  background-color: #FF70B8 } /*bakgrunnsfarge*/
+ul.navbar {
+  list-style-type: none; /*tar bort stjerner forran menyen*/
+  padding: 0;/*Plasserer sidemenyen riktig*/
+  margin: 0; /*hvor mye plass det er rundt menyen*/
+  position: absolute;/*Plasserer element relativt i forhold til tidligere elementer*/
+  top: 2em; /*Regulerer hvor høyt opp menyen skal være*/
+  left: 1em; /*Regulerer menyen mot høyre */
+  width: 9em } /* regulerer hvor bredt det hvite feltet bak sidemenyen er*/
 h1 {
-text-align: center;
-color: pink;
-font-size: 50px;
-text-decoration: underline;
-}
-#nojs {
-float: center;
-}
+  font-family: Helvetica, Geneva, Arial, /*endrer skrifttypen på overskrift*/
+        SunSans-Regular, sans-serif }
+ul.navbar li {
+  background: #FFADFF; /*backgrunn på sidemeny*/
+  margin: 0.5em 0; /*bestemmer marginen mellom de forskjellige menyene (mellomrom mellom dem)*/
+  padding: 0.3em; /*størrelsen på menyknappene*/
+  border-right: 1em solid purple } /*legger til og bestemmer farge på sort felt på menyene*/
+ul.navbar a {
+  text-decoration: none } /*skriftdekorasjon*/
+a:link {  
+  color: #660066 }  /*farge på lenker*/
+a:visited {
+  color: #660066 } /*farge på besøkte lenker*/
+address {
+  margin-top: 1em; /* margin på adresselinje(laget av etc)*/
+  padding-top: 1em; /*bestemmer avstanden fra rammen over adressefelt*/
+  border-top: thin dotted } /*legger til en ramme over adressefelt*/
