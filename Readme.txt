@@ -1,3 +1,5 @@
+LAB 1
+
 oppgave 0
 
 JavaScript kan brukes til å lage dynamiske sider ut av en HTML side. Javascript kan bl.a. manipulere HTML kode og behandle data fra skjemaer.
@@ -24,3 +26,7 @@ Div er for store deler av nettsiden, mens span er for mindre deler av nettsiden 
 oppgave 5 
 Droppdown menyen dekker over teksten på nettsiden. For å fikse overlappingen kunne jeg flyttet teksten til midten av nettsiden.
 For å fikse problemet med å velge det øverste valget i menyen, kan man lage f.eks. velg som øverste knapp, slik man ikke kan bruke den øverste. 
+
+Lab 2:
+
+i min applikasjon står html filen for model, CSS filen for View og JS for Controller
