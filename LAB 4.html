@@ -1,0 +1,182 @@
+<html <mlns="http://www.w3.org/1999/xhtml." wml:lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>LAB4 alfabetisk liste</title>
+	<link rel="stylesheet" type="text/css" href="lab4.css">
+	<script src="./js/jquery-1.8.1.js"></script>
+	<script src="./js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	
+	<script>
+	$(function()   {
+		
+		$( ".firstUL li" ).each(function() {
+			$( this ).click(function() {
+				$( ".firstUL li" ).removeClass( "selected" );
+				$( this).addClass( "selected");
+				elementClick = $( this).attr( "id" );
+				
+				$( ".content-container" ).scrollTo($( "#content-for-"+elementClick), 800);
+				
+				$( ".content-container div").css( {'background-color' : '#ffffff'} );
+				$( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
+			});	
+		$( '.return-to-top' ).click(function() {
+			$( ".firstUL li" ).each(function(){
+				$( ".firstUL li" ).removeClass( "selected" );
+			});
+			
+			$( "#a" ).addClass( "selected" );
+			$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+			$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+			$( ".content-container #content-for-a" ).css( {'background-color' : '#d2e2fc'} );
+		});	
+			
+	});
+	});
+	
+	
+	</script>
+</head>
+<body>
+
+<div id="body-container">
+	<div class="glossary-container">
+		<ul class="firstUL">
+			<li id="a" class="selected">A</li>
+			<li id="b">B</li>
+			<li id="c">C</li>
+			<li id="e">E</li>
+			<li id="f">F</li>
+			<li id="g">G</li>
+			<li id="h">H</li>
+			<li id="j">J</li>
+			<li id="l">L</li>
+			<li id="p">P</li>
+			<li id="r">R</li>
+			<li id="s">S</li>
+		</ul>
+	</div>
+	
+	<div class="content-container">
+		<div id="content-for-a" style="background-color:#d2e2fc">
+		
+			<dl>
+				<dt>Actionscript</dt>
+					<dd>ActionScript er et programmeringsspråk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe Flash Player-plattformen, men også i noen databaseapplikasjoner og grunnleggende robotikk</dd>
+				<dt>Applescript</dt>
+					<dd>AppleScript er et skriptspråk av Apple som brukes i Mac OS og Mac OS X.</dd>
+				<dt>Asp</dt>
+					<dd> Active Server Pages (ASP) er en teknologi for å lage websider som inneholder server-side scripts. ASP er utviklet av Microsoft, og ble utviklet spesifikt for å håndtere utvikling av webapplikasjoner. ASP er innebygd i Microsofts Internet Information Service (IIS), og gir et script-grensesnitt som er enkelt å lære og som støttes av mange eksisterende HTML-designverktøy.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+		<div id="content-for-b">
+		
+			<dl>
+				<dt>BASIC</dt>
+					<dd>BASIC (akronym for Beginner's All-purpose Symbolic Instruction Code) er et programmeringsspråk som ble utviklet i USA i 1963, av John George Kemeny og Thomas Eugene Kurtz på Dartmouth College, med det mål for øye å gjøre programmering enklere. BASIC er et relativt lettfattelig programmeringsspråk og benytter seg av bestemte engelske ord i sine kommandoer. </dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+		<div id="content-for-c">
+			<dl> 
+				<dt>C</dt>
+					<dd>  C er et høynivå programmeringsspråk. Med dette språket er det mulig å uttrykke seg svært maskinnært til høynivåspråk å være. Til forskjell fra lavnivåspråkene kan C-kode kompileres for de fleste maskiner. Siden en både kan uttrykke seg maskinnært og samtidig enkelt flytte programmer mellom ulike maskiner, kan en si at C inntar et mellomnivå mellom høynivåspråk og lavnivåspråk, som er årsaken til at C av og til kalles et "portabelt assemblerspråk". </dd>
+				<dt>C++</dt>
+					<dd>  C++ er et populært høynivå programmeringsspråk som er en utvidelse av språket C. C++ ble opprinnelig kalt «C with Classes» og ble utviklet og implementert av dansken Bjarne Stroustrup omkring 1983–85, som da jobbet for AT&T Bell Labs. </dd>
+				<dt>Clojure</dt>
+					<dd>  Clojure er en dialekt av Lisp programmeringsspråk opprettet av Rich Hickey. Clojure er en funksjonell generell språk, og kjører på Java Virtual Machine, Common Language Runtime, og JavaScript motorer. Som andre lisps, behandler Clojure kode som data og har en sofistikert makro system </dd>
+				<dt>COBOL</dt>
+					<dd>  COBOL (COmmon Business Oriented Language) er et programmeringsspråk som har vært i utstrakt bruk for koding av økonomiske og administrative transaksjonssystemer. Det ble konstruert i 1959 initiert av amerikanske forsvarsmyndigheter. COBOL brukes fortsatt i mange eksisterende systemer fordi disse ofte er store, godt uttestet og ikke er utsatt for sterke endringskrav. COBOL og systemene kodet i dette språket ble sterkt fokusert i forbindelse med år 2000-problemet. </dd>
+				<dt>ColdFusion</dt>
+					<dd> ColdFusion er en kommersiell rask web programutvikling plattform oppfunnet av Jeremy og JJ Allaire i 1995. ColdFusion ble opprinnelig utviklet for å gjøre det enklere å koble enkle HTML-sider til en database. Av Versjon 2 (1996), hadde det blitt en hel plattform som inkluderte en IDE i tillegg til en "full" skriptspråk. Som i 2010, versjoner av ColdFusion (kjøpt av Adobe Systems i 2005) inkluderer avanserte funksjoner for enterprise integrasjon og utvikling av rike Internett-applikasjoner. </dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		<div id="content-for-e">
+		
+			<dl>
+				<dt>Erlang</dt>
+					<dd> Erlang er et funksjonelt programmeringsspråk designet med hensyn på parallellprogrammering. Språket ble utviklet av Ericsson på 1980-tallet til bruk innen telekommunikasjon, og brukes blant annet av selskaper som Amazon, Yahoo! og Facebook. Et Erlang-program består typisk av mange små prosesser som kommuniserer ved hjelp av asynkrone meldinger </dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>		
+		<div id="content-for-f">
+			<dl>
+				<dt>Fortran</dt>
+					<dd>Fortran, tidligere kalt FORTRAN (FORmula TRANslation), blir ofte ansett som det første programmeringsspråket, siden det i prinsippet (og senere også i praksis) var portabelt. Fortran var uavhengig av datamaskinens maskinspråk, og kunne benyttes av ulike datamaskinarkitekturer.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>		
+		<div id="content-for-g">
+			<dl>
+				<dt>Groovy</dt>
+					<dd>Groovy er et objektorientert programmeringsspråk for Java-plattformen. Det er et dynamisk språk med funksjoner som ligner på de av Python, Ruby, Perl, og Smalltalk. Den kan brukes som et skriptspråk for Java Platform, er dynamisk kompilert til Java Virtual Machine (JVM) bytecode, og interoperates med andre Java-kode og biblioteker. Groovy bruker en Java-lignende curly-brakett syntaks. De fleste Java-koden er også syntaktisk gyldig Groovy</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>		
+		<div id="content-for-h">
+			<dl>
+				<dt>Haskell</dt>
+					<dd>Haskell er et standardisert, rent funksjonelt programmeringsspråk navngitt etter matematikeren Haskell Curry. Haskell byr på sterk typesetting og lat evaluering i flere implementasjoner, deriblant GHC. Som et funksjonelt språk er bruken av funksjoner den primære måten å konstruere et program med. Språket har dype røtter i Curry sin forskning og har derfor en mer matematisk tilnærming programmering enn imperative språk. Et eksempel på dette er at alle variabler er uforanderlige.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>	
+		<div id="content-for-j">
+			<dl>
+				<dt>Java</dt>
+					<dd>Java er et objektorientert programmeringsspråk, utviklet av James Gosling og andre utviklere hos Sun Microsystems. I november 2006 kunngjorde Sun at selskapet ville frigi Javakoden som åpen kildekode og dermed bli en av de største bidragsyterne innen dette globale miljøet.
+					I motsetning til f.eks. C, kompileres ikke Java til maskinkode, men til plattformuavhengig bytekode som kjøres av et underliggende lag programvare kalt Java Virtual Machine (JVM). Javaprogrammer kan derfor kjøre på alle operativsystemer hvor det finnes en Java Virtual Machine.</dd>
+				<dt>JavaScript</dt>
+					<dd>JavaScript er en implementasjon av ECMAScript, et skriptspråk som er best kjent for å tilføre dynamiske elementer til nettsider. Sammen med øvrig innhold på nettsiden (hovedsakelig HTML) sendes det kode (innenfor et <script>-tagpar), som kjøres lokalt i nettleseren, automatisk eller som reaksjon på brukervalg på siden.
+					Vanlige bruksområder er å bytte ut, fjerne eller legge inn tekst avhengig av hvor på siden du klikker, å skifte fokus i et skjema, og å åpne pop-up-vinduer.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>		
+		<div id="content-for-l">
+			<dl>
+				<dt>Lisp</dt>
+					<dd>LISP (forkortelse for List Processing) er en familie av programmeringsspråk. Den første utgaven stammer fra John McCarthys arbeid ved MIT og ble utviklet i 1958. LISP har mye til felles med Lambda kalkulus. Historisk sett har LISP stort sett vært brukt innenfor forskning og det akademiske, og da spesielt til forskning på kunstig intelligens, som John McCarthy først og fremst hadde i tankene da han fant det opp</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>		
+	
+		<div id="content-for-p">
+			<dl>
+				<dt>Perl</dt>
+					<dd>PEARL, eller Process og Experiment Automation Realtime språk, er et programmeringsspråk utviklet for multitasking og real-time programmering. Å være en høy-nivå språk, er det ganske cross-plattform.</dd>
+				<dt>PHP</dt>
+					<dd>PHP er et dynamisk, tolket og løst typet programmeringsspråk hovedsakelig brukt for å utvikle dynamiske nettsider. PHPs syntaks ligner C og Perl. Den vanligste implementasjonen av PHP er en fri og åpen versjon skrevet i C og distribuert av The PHP Group via php.net og SourceForge. En annen fri og åpen implementasjon, som muliggjør kompilering av PHP-kode til maskinkode, er utviklet av Roadsend Inc.</dd>
+				<dt>Python</dt>
+					<dd>Python er et objektorientert programmeringsspråk startet på av Guido van Rossum i 1989. Van Rossum valgte navnet «Python» fordi han er fan av Monty Python, og fordi han mener at programmering skal være gøy.
+					Python var opprinnelig et scriptspråk for Amoeba OS for å lage systemendringer. Perl, Ruby, Tcl, Scheme og tildels Java blir ofte sett på som alternativer til Python. Python er utviklet som et fri programvare-prosjekt.
+					Python har en lettlest og klar syntaks. I Python deles koden opp etter innrykk, ikke etter spesialtegn som }. Dette er trekk ved programmeringsspråket som skal gjøre det lettere og raskere å skrive programmer. Mange ser på Python som en nyere, men strengere og en mer striglet versjon av Perl.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>			
+		</div>		
+		<div id="content-for-r">
+			<dl>
+				<dt>Ruby</dt>
+					<dd>Ruby er et objektorientert programmeringsspråk. Det kombinerer syntaks inspirert av Perl med Smalltalk sine objektorienterte egenskaper. Det deler også egenskaper med Python, Lisp, Dylan og CLU. Ruby er et tolket programmeringsspråk. Hovedimplementasjonen er fri programvare.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>	
+		<div id="content-for-s">
+			<dl>
+				<dt>Scala</dt>
+					<dd>Scala er et programmeringsspråk som i nåværende implementasjon kjører på Javas virtulle maskin (JVM). Det kan benytte Java-biblioteker.</dd>
+				<dt>Scheme</dt>
+					<dd>Scheme er et funksjonelt programmeringsspråk i Lisp-familien. Scheme ble introdusert til den akademiske verden av Guy L. Steely og Gerald Jay Sussman gjennom flere artikler på 1970-tallet kalt «the lambda papers». Disse artiklene beskrev egenskapene til Scheme og gav en kompilator kalt «RABBIT» som kompilerte Scheme-kode til et subset av MacLISP (en tidlig Lisp dialekt). I dag er Scheme standardisert, og det finnes en rekke kompilatorer og tolkere for språket.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>	
+		</div>			
+		
+		
+	</div>
+</div>
+
+</body>
+
+</html>
